@@ -1,11 +1,11 @@
 alert('Boas vindas ao jogo do número secreto');
-let numeroSecreto = 4;
+let numeroSecreto = parseInt(Math.random * 100 + 1);
 console.log(numeroSecreto);
 let chute;
 let tentativas = 1;
 
 while(chute != numeroSecreto){
-    chute = prompt('escolha um número de 1 a 10');
+    chute = prompt('escolha um número de 1 a 100');
 
     if(chute == numeroSecreto){
         alert('parabéns você acertou');
