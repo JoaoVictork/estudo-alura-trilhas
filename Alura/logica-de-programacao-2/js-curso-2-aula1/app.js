@@ -1,9 +1,17 @@
-let titulo = document.querySelector('h1');
-titulo.innerHTML = 'Jogo do número secreto';
+let numeroSecreto = gerarNumeroSecreto();
 
-let paragrafo = document.querySelector('p');
-paragrafo.innerHTML = 'escolha um número entre 1 e 10';
+escreverTexto('h1', 'Hora do Desafio');
+escreverTexto('p', 'vamos começar');
+
+function escreverTexto(tag, texto){
+    let campo = document.querySelector(tag);
+    campo.innerHTML = texto;
+}
 
 function verificarChute(){
-    console.log("o botao foi clicado!")
+    console.log("o botao foi clicado!");
+}
+
+function gerarNumeroSecreto(){
+    return parseInt(Math.random() * 10 + 1);
 }
