@@ -1,4 +1,5 @@
-//let numeroSecreto = 4;
+let listaDeNumerosSorteados = [];
+let numeroLimite = 10;
 let numeroSecreto = gerarNumeroSecreto();
 let tentativas = 1;
 
@@ -33,7 +34,19 @@ function escreverTexto(tag, texto){
 }
 
 function gerarNumeroSecreto(){
-    return parseInt(Math.random() * 10 + 1);
+    let numeroEscolhido = parseInt(Math.random() * numeroLimite + 1);
+    let quantidadeDeNumerosNaLista = listaDeNumerosSorteados.length;
+
+    if(quantidadeDeNumerosNaLista == numeroLimite){
+        listaDeNumerosSorteados = [];
+    }
+    if(listaDeNumerosSorteados.includes(numeroEscolhido)){
+        numeroEscolhido = parseInt(Math.random() * 10 + 1);
+    }
+    else{
+        listaDeNumerosSorteados.push(numeroEscolhido)
+    }
+    return numeroEscolhido;
 }
 
 function limparCampo(){
