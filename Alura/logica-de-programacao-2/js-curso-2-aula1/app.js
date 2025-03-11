@@ -2,8 +2,7 @@
 let numeroSecreto = gerarNumeroSecreto();
 let tentativas = 1;
 
-escreverTexto('h1', 'Hora do Desafio');
-escreverTexto('p', 'digite um número de 1 a 10');
+exibirMensagemInicial();
 
 function verificarChute(){
     let chute = document.querySelector('input').value;
@@ -40,4 +39,17 @@ function gerarNumeroSecreto(){
 function limparCampo(){
     chute = document.querySelector('input');
     chute.value = '';
+}
+
+function reiniciarJogo(){
+    numeroSecreto = gerarNumeroSecreto();
+    limparCampo();
+    tentativas = 1;
+    exibirMensagemInicial;
+    document.getElementById('reiniciar').setAttribute('disabled', true);
+}
+
+function exibirMensagemInicial(){
+    escreverTexto('h1', 'Hora do Desafio');
+    escreverTexto('p', 'digite um número de 1 a 10');
 }
