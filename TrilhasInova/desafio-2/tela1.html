@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro do Usuário</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Tela 1: Cadastro do Usuário -->
+  <section id="cadastro-usuario" class="container">
+    <h1>Cadastro do Usuário</h1>
+    <p>Preencha os campos abaixo para criar sua conta.</p>
+
+    <form id="formulario-tela1">
+      <!-- Campos do formulário -->
+      <div class="campo">
+        <label for="nome-completo">Nome completo:</label>
+        <input type="text" id="nome-completo" name="nome-completo" required>
+      </div>
+
+      <div class="campo">
+        <label for="data-nascimento">Data de nascimento:</label>
+        <input type="date" id="data-nascimento" name="data-nascimento" required>
+      </div>
+
+      <div class="campo">
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" name="cpf" required>
+      </div>
+
+      <div class="campo">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="campo">
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" required>
+      </div>
+
+      <div class="campo campo-checkbox">
+        <input type="checkbox" id="aceitar-termos" name="aceitar-termos" required>
+        <label for="aceitar-termos">Aceito os termos e condições do processo.</label>
+      </div>
+
+      <!-- Botão centralizado -->
+      <div class="acoes">
+        <button type="submit" class="centralizado">Continuar inscrição</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- Link para o arquivo JavaScript -->
+  <script src="scripts.js"></script>
+</body>
+</html>
