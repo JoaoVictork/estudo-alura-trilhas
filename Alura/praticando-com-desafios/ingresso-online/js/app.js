@@ -5,5 +5,4 @@ function comprar(){
     alert(tipo)
     alert(qtd)
 }
-// por que o commit nao aparece no grafico??
-// UÉ????
+//teste
