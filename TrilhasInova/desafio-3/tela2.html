@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cadastro do Usuário</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="form-section cadastro">
+      <button id="voltarBtn">voltar</button>
+      <h2>Cadastro do Usuário</h2>
+      <form id="cadastroForm" enctype="multipart/form-data">
+        <label for="nome">Nome completo:</label>
+        <input type="text" id="nome" required />
+
+        <label for="dataNascimento">Data de nascimento:</label>
+        <input type="text" id="dataNascimento" placeholder="dd/mm/aaaa" required />
+
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" required />
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" required />
+
+        <label for="areaInteresse">Área de interesse:</label>
+        <select id="areaInteresse" required>
+          <option value="" disabled selected>Selecione uma área</option>
+          <option value="TI">Tecnologia</option>
+          <option value="Marketing">Marketing</option>
+          <option value="Design">Design</option>
+        </select>
+
+        <label for="formacao">Formação acadêmica:</label>
+        <select id="formacao" required>
+          <option value="" disabled selected>Selecione uma formação</option>
+          <option value="medio">Ensino Médio</option>
+          <option value="superior">Ensino Superior</option>
+          <option value="tecnico">Curso Técnico</option>
+        </select>
+
+        <label for="experiencia">Experiência profissional:</label>
+        <textarea id="experiencia" required></textarea>
+
+        <label>Disponibilidade de horário:</label>
+        <div class="checkbox-group">
+          <input type="checkbox" id="manha" name="disponibilidade" value="Manhã" />
+          <label for="manha">Manhã</label><br/>
+          <input type="checkbox" id="tarde" name="disponibilidade" value="Tarde" />
+          <label for="tarde">Tarde</label><br/>
+          <input type="checkbox" id="noite" name="disponibilidade" value="Noite" />
+          <label for="noite">Noite</label>
+        </div>
+
+        <label for="sobre">Conte mais sobre você (opcional):</label>
+        <textarea id="sobre"></textarea>
+
+        <label for="documentos">Upload de documentos:</label>
+        <input type="file" id="documentos" />
+
+        <button type="submit">Finalizar Inscrição</button>
+      </form>
+    </div>
+
+    <div class="logo-section">
+      <img src="assets/inovaMaranhao.avif" alt="Inova Maranhão" class="logo">
+      <img src="assets/governoMaranhao.png" alt="Governo do Maranhão" class="logo">
+      <img src="assets/trilhas logo.webp" alt="Trilhas" class="logo">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
