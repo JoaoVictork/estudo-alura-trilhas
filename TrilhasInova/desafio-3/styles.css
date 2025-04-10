@@ -58,6 +58,7 @@ label {
 /* Inputs gerais */
 input[type="text"],
 input[type="email"],
+input[type="date"],
 input[type="password"],
 input[type="tel"],
 input[type="file"],
