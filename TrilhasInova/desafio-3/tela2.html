@@ -43,21 +43,19 @@
         <label for="experiencia">Experiência profissional:</label>
         <textarea id="experiencia" required></textarea>
 
-        <label>Disponibilidade de horário:</label>
-        <div class="checkbox-group">
-          <input type="checkbox" id="manha" name="disponibilidade" value="Manhã" />
-          <label for="manha">Manhã</label><br/>
-          <input type="checkbox" id="tarde" name="disponibilidade" value="Tarde" />
-          <label for="tarde">Tarde</label><br/>
-          <input type="checkbox" id="noite" name="disponibilidade" value="Noite" />
-          <label for="noite">Noite</label>
-        </div>
+        <label for="disponibilidade">Disponibilidade de horário *</label>
+        <select id="disponibilidade" required>
+          <option value="">Selecione</option>
+          <option value="Manhã">Manhã</option>
+          <option value="Tarde">Tarde</option>
+          <option value="Noite">Noite</option>
+        </select>
 
         <label for="sobre">Conte mais sobre você (opcional):</label>
-        <textarea id="sobre"></textarea>
+        <textarea id="sobre" name="sobre" placeholder="Digite algo se quiser..."></textarea>
 
         <label for="documentos">Upload de documentos:</label>
-        <input type="file" id="documentos" />
+        <input type="file" id="documentos" required />
 
         <button type="submit">Finalizar Inscrição</button>
       </form>
@@ -70,6 +68,6 @@
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <script src="scripts.js"></script>
 </body>
 </html>
